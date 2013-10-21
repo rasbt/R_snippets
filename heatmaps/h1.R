@@ -32,11 +32,11 @@ png("h1.png",
 heatmap.2(mat_data, 
   cellnote = mat_data,  # same data set for cell labels
   notecol="black",      # change font color of cell labels to black
-  density.info="none", 	# turns off density plot inside color legend
-  trace="none", 	      # turns off trace lines inside the heat map
-  margins =c(12,9), 	  # widens margins around plot
+  density.info="none",  # turns off density plot inside color legend
+  trace="none",         # turns off trace lines inside the heat map
+  margins =c(12,9),     # widens margins around plot
   col=my_palette,       # use on color palette defined earlier 
-  breaks=col_breaks,	  # enable color transition at specified limits
+  breaks=col_breaks,    # enable color transition at specified limits
   dendrogram="row",     # only draw a row dendrogram
   Colv="NA")            # turn off column clustering
 
