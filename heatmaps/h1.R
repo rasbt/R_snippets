@@ -33,6 +33,7 @@ png("h1.png",
 
 heatmap.2(mat_data, 
   cellnote = mat_data,  # same data set for cell labels
+  main = "Correlatin"   # heat map title
   notecol="black",      # change font color of cell labels to black
   density.info="none",  # turns off density plot inside color legend
   trace="none",         # turns off trace lines inside the heat map
