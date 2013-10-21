@@ -6,9 +6,9 @@ library(RColorBrewer)
 #########################################################
 
 data <- read.csv("h1_dataset.csv", comment.char="#")
-rnames <- data[,1]				                    # assign labels in column 1 to "rnames"
-mat_data <- data.matrix(data[,2:ncol(data)])	# transform column 2-5 into a matrix
-rownames(mat_data) <- rnames		            	# assign row names 
+rnames <- data[,1]                            # assign labels in column 1 to "rnames"
+mat_data <- data.matrix(data[,2:ncol(data)])  # transform column 2-5 into a matrix
+rownames(mat_data) <- rnames                  # assign row names 
 
 
 
