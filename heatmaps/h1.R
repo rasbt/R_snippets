@@ -20,14 +20,16 @@ rownames(mat_data) <- rnames		            	# assign row names
 my_palette <- colorRampPalette(c("red", "yellow", "green"))(n = 299)
 
 # (optional) defines the color breaks manually for a "skewed" color transition
-col_breaks = c(seq(-1,0,length=100),seq(0,0.7,length=100),seq(0.7,1,length=100))
+col_breaks = c(seq(-1,0,length=100),  # for red
+  seq(0,0.7,length=100),              # for yellow
+  seq(0.7,1,length=100))              # for green
 
 # creates a 5 x 5 inch image
 png("h1.png",	
-  width = 5*300,    # 5 x 300 pixels
+  width = 5*300,        # 5 x 300 pixels
   height = 5*300,
-  res = 300,        # 300 pixels per inch
-  pointsize = 8)    # smaller font size
+  res = 300,            # 300 pixels per inch
+  pointsize = 8)        # smaller font size
 
 heatmap.2(mat_data, 
   cellnote = mat_data,  # same data set for cell labels
