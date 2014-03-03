@@ -34,9 +34,9 @@ png("h3_categorizing.png",
 heatmap.2(mat_data, 
   cellnote = mat_data,  # same data set for cell labels
   RowSideColors = c(    # grouping row-variables into different
-     rep("green", 3),   # categories, Measurement 1-3: green
+     rep("gray", 3),   # categories, Measurement 1-3: green
      rep("blue", 3),    # Measurement 4-6: blue
-     rep("red", 4)),    # Measurement 7-10: red
+     rep("black", 4)),    # Measurement 7-10: red
   main = "Categories",  # heat map title
   notecol="black",      # change font color of cell labels to black
   density.info="none",  # turns off density plot inside color legend
@@ -51,7 +51,7 @@ heatmap.2(mat_data,
 par(lend = 1)           # square line ends  for the color legend
 legend("topright",      # location of the legend on the heatmap plot
     legend = c("category1", "category2", "category3"), # category labels
-    col = c("green", "blue", "red"),  # color key
+    col = c("gray", "blue", "black"),  # color key
     lty = 1,            # line style
     lwd = 10,           # line width
    )          
